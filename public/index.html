@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dave's Travel - Discover Your Next Journey</title>
+    
+    <!-- External CSS Libraries -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/glide.js/3.5.2/css/glide.core.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/glide.js/3.5.2/css/glide.theme.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#" class="logo">Dave's Travel</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+            <h1>Discover Your Next Adventure</h1>
+            <p>Explore breathtaking destinations, create unforgettable memories, and embark on the journey of a lifetime with Wanderlust Adventures.</p>
+            <a href="#destinations" class="cta-button">Start Exploring</a>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section class="destinations" id="destinations">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Popular Destinations</h2>
+            
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <div class="destination-card" data-aos="fade-up" data-aos-delay="100">
+                                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Santorini" class="destination-image">
+                                <div class="destination-info">
+                                    <h3>Santorini, Greece</h3>
+                                    <p>Experience the magic of white-washed buildings and stunning sunsets over the Aegean Sea.</p>
+                                    <div class="price">From $1,299</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="destination-card" data-aos="fade-up" data-aos-delay="200">
+                                <img src="https://images.unsplash.com/photo-1544550285-f813152fb2fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Bali" class="destination-image">
+                                <div class="destination-info">
+                                    <h3>Bali, Indonesia</h3>
+                                    <p>Immerse yourself in tropical paradise with lush rice terraces and pristine beaches.</p>
+                                    <div class="price">From $899</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="destination-card" data-aos="fade-up" data-aos-delay="300">
+                                <img src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Machu Picchu" class="destination-image">
+                                <div class="destination-info">
+                                    <h3>Machu Picchu, Peru</h3>
+                                    <p>Discover the ancient Incan citadel high in the Andes Mountains.</p>
+                                    <div class="price">From $1,599</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="destination-card" data-aos="fade-up" data-aos-delay="400">
+                                <img src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Maldives" class="destination-image">
+                                <div class="destination-info">
+                                    <h3>Maldives</h3>
+                                    <p>Relax in overwater bungalows surrounded by crystal-clear turquoise waters.</p>
+                                    <div class="price">From $2,299</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Our Achievements</h2>
+            <div class="stats-grid">
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-number" id="happy-travelers">0</div>
+                    <div class="stat-label">Happy Travelers</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-number" id="destinations">0</div>
+                    <div class="stat-label">Destinations</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-number" id="years-experience">0</div>
+                    <div class="stat-label">Years of Experience</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-number" id="awards">0</div>
+                    <div class="stat-label">Awards Won</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Explore Our Destinations</h2>
+            <div id="map" data-aos="fade-up" data-aos-delay="200"></div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Travel Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
+                    <a href="" data-lightbox="gallery" data-title="Beautiful Mountain Landscape">
+                        <img src="" alt="Mountain">
+                    </a>
+                </div>
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+                    <a href="" data-lightbox="gallery" data-title="Tropical Beach Paradise">
+                        <img src="" alt="Beach">
+                    </a>
+                </div>
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="300">
+                    <a href="" data-lightbox="gallery" data-title="Serene Forest Path">
+                        <img src="" alt="Forest">
+                    </a>
+                </div>
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="400">
+                    <a href="" data-lightbox="gallery" data-title="Majestic Mountain Range">
+                        <img src="" alt="Mountains">
+                    </a>
+                </div>
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="500">
+                    <a href="" data-lightbox="gallery" data-title="Enchanted Forest">
+                        <img src="" alt="Forest Path">
+                    </a>
+                </div>
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="600">
+                    <a href="" data-lightbox="gallery" data-title="Autumn Forest Glory">
+                        <img src="" alt="Autumn Forest">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get in Touch</h2>
+            <form action="#" method="post" class="contact-form" data-aos="fade-up" data-aos-delay="100">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#about">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+                <a href="#privacy">Privacy Policy</a>
+            </div>
+            <p>&copy; 2024 Wanderlust Adventures. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- External JavaScript Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glide.js/3.5.2/glide.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anime.js/3.2.1/anime.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
